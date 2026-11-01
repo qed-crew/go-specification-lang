@@ -1,0 +1,91 @@
+=== RUN   TestWhy3Examples
+=== RUN   TestWhy3Examples/insertion_sort.go/32
+    prove_integration_test.go:52: 48 Valid goals; expected success = true
+=== RUN   TestWhy3Examples/insertion_sort.go/64
+    prove_integration_test.go:52: 48 Valid goals; expected success = true
+=== RUN   TestWhy3Examples/semantics.go/32
+    prove_integration_test.go:52: 80 Valid goals; expected success = true
+=== RUN   TestWhy3Examples/semantics.go/64
+    prove_integration_test.go:52: 80 Valid goals; expected success = true
+--- PASS: TestWhy3Examples (13.57s)
+    --- PASS: TestWhy3Examples/insertion_sort.go/32 (4.90s)
+    --- PASS: TestWhy3Examples/insertion_sort.go/64 (4.74s)
+    --- PASS: TestWhy3Examples/semantics.go/32 (1.98s)
+    --- PASS: TestWhy3Examples/semantics.go/64 (1.95s)
+=== RUN   TestWhy3RejectsIncorrectPrograms
+=== RUN   TestWhy3RejectsIncorrectPrograms/wrong_postcondition
+    prove_integration_test.go:65: 1 Valid goals; expected success = false
+=== RUN   TestWhy3RejectsIncorrectPrograms/integer_overflow
+    prove_integration_test.go:65: 2 Valid goals; expected success = false
+=== RUN   TestWhy3RejectsIncorrectPrograms/out_of_bounds
+    prove_integration_test.go:65: 1 Valid goals; expected success = false
+=== RUN   TestWhy3RejectsIncorrectPrograms/false_invariant
+    prove_integration_test.go:65: 7 Valid goals; expected success = false
+--- PASS: TestWhy3RejectsIncorrectPrograms (4.56s)
+    --- PASS: TestWhy3RejectsIncorrectPrograms/wrong_postcondition (1.33s)
+    --- PASS: TestWhy3RejectsIncorrectPrograms/integer_overflow (1.34s)
+    --- PASS: TestWhy3RejectsIncorrectPrograms/out_of_bounds (0.43s)
+    --- PASS: TestWhy3RejectsIncorrectPrograms/false_invariant (1.45s)
+=== RUN   TestWhy3RejectsBrokenSort
+    prove_integration_test.go:74: 46 Valid goals; expected success = false
+--- PASS: TestWhy3RejectsBrokenSort (4.28s)
+=== RUN   TestRejectUnsupportedSemantics
+=== RUN   TestRejectUnsupportedSemantics/fixed_array
+=== RUN   TestRejectUnsupportedSemantics/recursion
+=== RUN   TestRejectUnsupportedSemantics/missing_variant
+=== RUN   TestRejectUnsupportedSemantics/unknown_annotation
+=== RUN   TestRejectUnsupportedSemantics/malformed_contract
+=== RUN   TestRejectUnsupportedSemantics/aliasing
+=== RUN   TestRejectUnsupportedSemantics/goroutine
+=== RUN   TestRejectUnsupportedSemantics/indirect_recursion
+=== RUN   TestRejectUnsupportedSemantics/division
+=== RUN   TestRejectUnsupportedSemantics/effectful_read
+=== RUN   TestRejectUnsupportedSemantics/effectful_assignment
+=== RUN   TestRejectUnsupportedSemantics/assigns_rejected
+=== RUN   TestRejectUnsupportedSemantics/unknown_spec_name
+=== RUN   TestRejectUnsupportedSemantics/local_alias
+=== RUN   TestRejectUnsupportedSemantics/overflow_constant
+=== RUN   TestRejectUnsupportedSemantics/range
+=== RUN   TestRejectUnsupportedSemantics/misplaced_annotation
+=== RUN   TestRejectUnsupportedSemantics/chained_comparison
+=== RUN   TestRejectUnsupportedSemantics/globals
+=== RUN   TestRejectUnsupportedSemantics/pointer
+=== RUN   TestRejectUnsupportedSemantics/rebind_parameter
+=== RUN   TestRejectUnsupportedSemantics/append
+=== RUN   TestRejectUnsupportedSemantics/old_local
+--- PASS: TestRejectUnsupportedSemantics (0.00s)
+    --- PASS: TestRejectUnsupportedSemantics/fixed_array (0.00s)
+    --- PASS: TestRejectUnsupportedSemantics/recursion (0.00s)
+    --- PASS: TestRejectUnsupportedSemantics/missing_variant (0.00s)
+    --- PASS: TestRejectUnsupportedSemantics/unknown_annotation (0.00s)
+    --- PASS: TestRejectUnsupportedSemantics/malformed_contract (0.00s)
+    --- PASS: TestRejectUnsupportedSemantics/aliasing (0.00s)
+    --- PASS: TestRejectUnsupportedSemantics/goroutine (0.00s)
+    --- PASS: TestRejectUnsupportedSemantics/indirect_recursion (0.00s)
+    --- PASS: TestRejectUnsupportedSemantics/division (0.00s)
+    --- PASS: TestRejectUnsupportedSemantics/effectful_read (0.00s)
+    --- PASS: TestRejectUnsupportedSemantics/effectful_assignment (0.00s)
+    --- PASS: TestRejectUnsupportedSemantics/assigns_rejected (0.00s)
+    --- PASS: TestRejectUnsupportedSemantics/unknown_spec_name (0.00s)
+    --- PASS: TestRejectUnsupportedSemantics/local_alias (0.00s)
+    --- PASS: TestRejectUnsupportedSemantics/overflow_constant (0.00s)
+    --- PASS: TestRejectUnsupportedSemantics/range (0.00s)
+    --- PASS: TestRejectUnsupportedSemantics/misplaced_annotation (0.00s)
+    --- PASS: TestRejectUnsupportedSemantics/chained_comparison (0.00s)
+    --- PASS: TestRejectUnsupportedSemantics/globals (0.00s)
+    --- PASS: TestRejectUnsupportedSemantics/pointer (0.00s)
+    --- PASS: TestRejectUnsupportedSemantics/rebind_parameter (0.00s)
+    --- PASS: TestRejectUnsupportedSemantics/append (0.00s)
+    --- PASS: TestRejectUnsupportedSemantics/old_local (0.00s)
+=== RUN   TestExamplesAndDeterminism
+=== RUN   TestExamplesAndDeterminism/insertion_sort.go
+=== RUN   TestExamplesAndDeterminism/semantics.go
+--- PASS: TestExamplesAndDeterminism (0.00s)
+    --- PASS: TestExamplesAndDeterminism/insertion_sort.go (0.00s)
+    --- PASS: TestExamplesAndDeterminism/semantics.go (0.00s)
+=== RUN   TestIntWidthAndAtomicOutput
+--- PASS: TestIntWidthAndAtomicOutput (0.00s)
+=== RUN   TestSpecParserRejectsTruncation
+--- PASS: TestSpecParserRejectsTruncation (0.00s)
+PASS
+ok  	gpma/framework/plugin/whyml	22.419s

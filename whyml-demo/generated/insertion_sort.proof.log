@@ -1,0 +1,192 @@
+File "../whyml-demo/generated/insertion_sort.mlw", line 29, characters 55-63:
+Sub-goal Index in array bounds of goal go_Swap'vc.
+Prover result is: Valid (0.00s, 4358 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 30, characters 58-68:
+Sub-goal Index in array bounds of goal go_Swap'vc.
+Prover result is: Valid (0.01s, 4364 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 31, characters 6-23:
+Sub-goal Index in array bounds of goal go_Swap'vc.
+Prover result is: Valid (0.01s, 4364 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 32, characters 6-24:
+Sub-goal Index in array bounds of goal go_Swap'vc.
+Prover result is: Valid (0.01s, 20469 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 15, characters 14-29:
+Sub-goal Postcondition of goal go_Swap'vc.
+Prover result is: Valid (2.29s, 4015284 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 20, characters 14-54:
+Sub-goal Postcondition of goal go_Swap'vc.
+Prover result is: Valid (0.01s, 55293 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 21, characters 14-53:
+Sub-goal Postcondition of goal go_Swap'vc.
+Prover result is: Valid (0.02s, 58274 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 22, characters 14-53:
+Sub-goal Postcondition of goal go_Swap'vc.
+Prover result is: Valid (0.01s, 53627 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 23, characters 124-163:
+Sub-goal Postcondition of goal go_Swap'vc.
+Prover result is: Valid (0.02s, 57009 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 24, characters 14-44:
+Sub-goal Postcondition of goal go_Swap'vc.
+Prover result is: Valid (0.01s, 53820 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 49, characters 24-37:
+Sub-goal Loop invariant init of goal go_InsertionSort'vc.
+Prover result is: Valid (0.00s, 27702 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 50, characters 24-40:
+Sub-goal Loop invariant init of goal go_InsertionSort'vc.
+Prover result is: Valid (0.01s, 2467 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 51, characters 24-70:
+Sub-goal Loop invariant init of goal go_InsertionSort'vc.
+Prover result is: Valid (0.02s, 32419 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 52, characters 24-52:
+Sub-goal Loop invariant init of goal go_InsertionSort'vc.
+Prover result is: Valid (0.01s, 34848 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 53, characters 24-56:
+Sub-goal Loop invariant init of goal go_InsertionSort'vc.
+Prover result is: Valid (0.01s, 35398 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 64, characters 34-47:
+Sub-goal Loop invariant init of goal go_InsertionSort'vc.
+Prover result is: Valid (0.00s, 3249 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 65, characters 34-47:
+Sub-goal Loop invariant init of goal go_InsertionSort'vc.
+Prover result is: Valid (0.01s, 3254 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 66, characters 34-50:
+Sub-goal Loop invariant init of goal go_InsertionSort'vc.
+Prover result is: Valid (0.00s, 3259 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 67, characters 34-103:
+Sub-goal Loop invariant init of goal go_InsertionSort'vc.
+Prover result is: Valid (0.00s, 4598 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 68, characters 150-188:
+Sub-goal Loop invariant init of goal go_InsertionSort'vc.
+Prover result is: Valid (0.02s, 40179 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 69, characters 34-66:
+Sub-goal Loop invariant init of goal go_InsertionSort'vc.
+Prover result is: Valid (0.00s, 3367 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 63, characters 232-243:
+Sub-goal Assertion of goal go_InsertionSort'vc.
+Prover result is: Valid (0.01s, 38890 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 63, characters 257-267:
+Sub-goal Index in array bounds of goal go_InsertionSort'vc.
+Prover result is: Valid (0.02s, 39088 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 63, characters 326-336:
+Sub-goal Index in array bounds of goal go_InsertionSort'vc.
+Prover result is: Valid (0.01s, 38441 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 74, characters 145-156:
+Sub-goal Assertion of goal go_InsertionSort'vc.
+Prover result is: Valid (0.01s, 9607 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 74, characters 191-213:
+Sub-goal Precondition of goal go_InsertionSort'vc.
+Prover result is: Valid (0.00s, 3493 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 74, characters 191-213:
+Sub-goal Precondition of goal go_InsertionSort'vc.
+Prover result is: Valid (0.01s, 3498 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 74, characters 191-213:
+Sub-goal Precondition of goal go_InsertionSort'vc.
+Prover result is: Valid (0.01s, 3503 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 74, characters 191-213:
+Sub-goal Precondition of goal go_InsertionSort'vc.
+Prover result is: Valid (0.01s, 42823 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 74, characters 191-213:
+Sub-goal Precondition of goal go_InsertionSort'vc.
+Prover result is: Valid (0.01s, 42081 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 76, characters 73-84:
+Sub-goal Assertion of goal go_InsertionSort'vc.
+Prover result is: Valid (0.00s, 3621 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 70, characters 32-38:
+Sub-goal Loop variant decrease of goal go_InsertionSort'vc.
+Prover result is: Valid (0.00s, 10019 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 64, characters 34-47:
+Sub-goal Loop invariant preservation of goal go_InsertionSort'vc.
+Prover result is: Valid (0.00s, 3631 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 65, characters 34-47:
+Sub-goal Loop invariant preservation of goal go_InsertionSort'vc.
+Prover result is: Valid (0.01s, 10099 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 66, characters 34-50:
+Sub-goal Loop invariant preservation of goal go_InsertionSort'vc.
+Prover result is: Valid (0.00s, 3641 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 67, characters 34-103:
+Sub-goal Loop invariant preservation of goal go_InsertionSort'vc.
+Prover result is: Valid (0.02s, 44414 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 68, characters 150-188:
+Sub-goal Loop invariant preservation of goal go_InsertionSort'vc.
+Prover result is: Valid (0.05s, 248960 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 69, characters 34-66:
+Sub-goal Loop invariant preservation of goal go_InsertionSort'vc.
+Prover result is: Valid (0.01s, 47544 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 88, characters 59-70:
+Sub-goal Assertion of goal go_InsertionSort'vc.
+Prover result is: Valid (0.01s, 46702 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 54, characters 22-48:
+Sub-goal Loop variant decrease of goal go_InsertionSort'vc.
+Prover result is: Valid (0.00s, 20820 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 49, characters 24-37:
+Sub-goal Loop invariant preservation of goal go_InsertionSort'vc.
+Prover result is: Valid (0.00s, 14052 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 50, characters 24-40:
+Sub-goal Loop invariant preservation of goal go_InsertionSort'vc.
+Prover result is: Valid (0.00s, 3520 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 51, characters 24-70:
+Sub-goal Loop invariant preservation of goal go_InsertionSort'vc.
+Prover result is: Valid (0.01s, 46892 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 52, characters 24-52:
+Sub-goal Loop invariant preservation of goal go_InsertionSort'vc.
+Prover result is: Valid (0.75s, 5610238 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 53, characters 24-56:
+Sub-goal Loop invariant preservation of goal go_InsertionSort'vc.
+Prover result is: Valid (0.00s, 3541 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 38, characters 14-30:
+Sub-goal Postcondition of goal go_InsertionSort'vc.
+Prover result is: Valid (0.00s, 3253 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 39, characters 14-29:
+Sub-goal Postcondition of goal go_InsertionSort'vc.
+Prover result is: Valid (0.01s, 37528 steps).
+
+File "../whyml-demo/generated/insertion_sort.mlw", line 40, characters 14-46:
+Sub-goal Postcondition of goal go_InsertionSort'vc.
+Prover result is: Valid (0.00s, 3296 steps).
+

@@ -3,4 +3,5 @@ go 1.25.2
 use (
 	./demo
 	./framework
+	./whyml-demo
 )
