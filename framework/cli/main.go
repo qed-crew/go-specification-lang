@@ -15,6 +15,7 @@ import (
 	_ "gpma/framework/plugin/dynamic_checks"
 	_ "gpma/framework/plugin/examples"
 	_ "gpma/framework/plugin/gobra"
+	_ "gpma/framework/plugin/whyml"
 
 	"github.com/urfave/cli/v2"
 
@@ -297,6 +298,7 @@ func processFile(c *cli.Context) error {
 		for _, err := range result.FatalErrors {
 			fmt.Printf("  - %v\n", err)
 		}
+		return cli.Exit("plugin processing failed", 1)
 	}
 
 	if result.Modified {
@@ -315,9 +317,9 @@ func processFile(c *cli.Context) error {
 		}
 	} else {
 		if outputFile != "" {
-			fmt.Println("No modifications were made, output file not created")
+			fmt.Println("No Go source modifications were made, Go output file not created")
 		} else {
-			fmt.Println("No modifications were made")
+			fmt.Println("No Go source modifications were made")
 		}
 	}
 
@@ -466,6 +468,13 @@ func processProject(projectDir, outputDir string, pluginNames []string, pluginCo
 			errorCount++
 			return nil
 		}
+		if len(result.FatalErrors) > 0 {
+			for _, pluginErr := range result.FatalErrors {
+				fmt.Printf("Plugin error in %s: %v\n", relPath, pluginErr)
+			}
+			errorCount += len(result.FatalErrors)
+			return nil
+		}
 
 		if result.Modified {
 			if err := os.WriteFile(outputPath, []byte(result.GeneratedCode), 0644); err != nil {
@@ -522,6 +531,9 @@ func processProject(projectDir, outputDir string, pluginNames []string, pluginCo
 	fmt.Printf("  Errors: %d\n", errorCount)
 	fmt.Printf("  Output directory: %s\n", absOutputDir)
 	fmt.Printf("  Overlay file: %s\n", overlayPath)
+	if errorCount > 0 {
+		return cli.Exit("project processing failed", 1)
+	}
 
 	return nil
 }

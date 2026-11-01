@@ -1,0 +1,320 @@
+File "../whyml-demo/generated/semantics.mlw", line 24, characters 32-42:
+Sub-goal Index in array bounds of goal go_Bump'vc.
+Prover result is: Valid (0.01s, 4361 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 24, characters 60-70:
+Sub-goal Assertion of goal go_Bump'vc.
+Prover result is: Valid (0.01s, 36277 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 24, characters 6-78:
+Sub-goal Index in array bounds of goal go_Bump'vc.
+Prover result is: Valid (0.01s, 4380 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 26, characters 64-72:
+Sub-goal Index in array bounds of goal go_Bump'vc.
+Prover result is: Valid (0.01s, 6401 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 15, characters 14-29:
+Sub-goal Postcondition of goal go_Bump'vc.
+Prover result is: Valid (0.03s, 104971 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 18, characters 14-51:
+Sub-goal Postcondition of goal go_Bump'vc.
+Prover result is: Valid (0.02s, 51584 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 19, characters 14-35:
+Sub-goal Postcondition of goal go_Bump'vc.
+Prover result is: Valid (0.00s, 4629 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 20, characters 14-27:
+Sub-goal Postcondition of goal go_Bump'vc.
+Prover result is: Valid (0.02s, 49972 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 39, characters 116-127:
+Sub-goal Assertion of goal go_Pack'vc.
+Prover result is: Valid (0.01s, 24235 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 39, characters 196-207:
+Sub-goal Assertion of goal go_Pack'vc.
+Prover result is: Valid (0.01s, 24438 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 35, characters 14-47:
+Sub-goal Postcondition of goal go_Pack'vc.
+Prover result is: Valid (0.01s, 2359 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 36, characters 14-27:
+Sub-goal Postcondition of goal go_Pack'vc.
+Prover result is: Valid (0.00s, 2368 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 53, characters 66-78:
+Sub-goal Precondition of goal go_CallOrder'vc.
+Prover result is: Valid (0.00s, 3099 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 53, characters 66-78:
+Sub-goal Precondition of goal go_CallOrder'vc.
+Prover result is: Valid (0.00s, 3108 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 53, characters 66-78:
+Sub-goal Precondition of goal go_CallOrder'vc.
+Prover result is: Valid (0.00s, 4351 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 53, characters 116-128:
+Sub-goal Precondition of goal go_CallOrder'vc.
+Prover result is: Valid (0.00s, 3151 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 53, characters 116-128:
+Sub-goal Precondition of goal go_CallOrder'vc.
+Prover result is: Valid (0.00s, 4424 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 53, characters 116-128:
+Sub-goal Precondition of goal go_CallOrder'vc.
+Prover result is: Valid (0.01s, 4437 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 53, characters 133-150:
+Sub-goal Precondition of goal go_CallOrder'vc.
+Prover result is: Valid (0.01s, 3199 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 53, characters 133-150:
+Sub-goal Precondition of goal go_CallOrder'vc.
+Prover result is: Valid (0.01s, 3204 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 53, characters 133-150:
+Sub-goal Precondition of goal go_CallOrder'vc.
+Prover result is: Valid (0.01s, 4525 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 53, characters 133-150:
+Sub-goal Precondition of goal go_CallOrder'vc.
+Prover result is: Valid (0.00s, 4544 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 45, characters 14-30:
+Sub-goal Postcondition of goal go_CallOrder'vc.
+Prover result is: Valid (0.00s, 3212 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 48, characters 14-31:
+Sub-goal Postcondition of goal go_CallOrder'vc.
+Prover result is: Valid (0.01s, 4529 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 49, characters 14-27:
+Sub-goal Postcondition of goal go_CallOrder'vc.
+Prover result is: Valid (0.00s, 4542 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 50, characters 14-27:
+Sub-goal Postcondition of goal go_CallOrder'vc.
+Prover result is: Valid (0.01s, 3231 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 64, characters 179-189:
+Sub-goal Index in array bounds of goal go_ShortCircuit'vc.
+Prover result is: Valid (0.00s, 3088 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 59, characters 14-30:
+Sub-goal Postcondition of goal go_ShortCircuit'vc.
+Prover result is: Valid (0.00s, 3153 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 61, characters 14-30:
+Sub-goal Postcondition of goal go_ShortCircuit'vc.
+Prover result is: Valid (0.00s, 4402 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 85, characters 6-26:
+Sub-goal Index in array bounds of goal go_ParallelAssignment'vc.
+Prover result is: Valid (0.01s, 34838 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 70, characters 14-30:
+Sub-goal Postcondition of goal go_ParallelAssignment'vc.
+Prover result is: Valid (0.03s, 78566 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 72, characters 14-31:
+Sub-goal Postcondition of goal go_ParallelAssignment'vc.
+Prover result is: Valid (0.01s, 49441 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 73, characters 14-47:
+Sub-goal Postcondition of goal go_ParallelAssignment'vc.
+Prover result is: Valid (0.01s, 50626 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 74, characters 14-26:
+Sub-goal Postcondition of goal go_ParallelAssignment'vc.
+Prover result is: Valid (0.00s, 4621 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 75, characters 14-27:
+Sub-goal Postcondition of goal go_ParallelAssignment'vc.
+Prover result is: Valid (0.01s, 49723 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 106, characters 24-37:
+Sub-goal Loop invariant init of goal go_ContinuePost'vc.
+Prover result is: Valid (0.01s, 2328 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 107, characters 24-41:
+Sub-goal Loop invariant init of goal go_ContinuePost'vc.
+Prover result is: Valid (0.01s, 23992 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 108, characters 24-37:
+Sub-goal Loop invariant init of goal go_ContinuePost'vc.
+Prover result is: Valid (0.00s, 2338 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 109, characters 24-61:
+Sub-goal Loop invariant init of goal go_ContinuePost'vc.
+Prover result is: Valid (0.01s, 23948 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 110, characters 24-110:
+Sub-goal Loop invariant init of goal go_ContinuePost'vc.
+Prover result is: Valid (0.01s, 2372 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 130, characters 59-70:
+Sub-goal Assertion of goal go_ContinuePost'vc.
+Prover result is: Valid (0.01s, 25027 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 111, characters 22-39:
+Sub-goal Loop variant decrease of goal go_ContinuePost'vc.
+Prover result is: Valid (0.01s, 10929 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 106, characters 24-37:
+Sub-goal Loop invariant preservation of goal go_ContinuePost'vc.
+Prover result is: Valid (0.00s, 2442 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 107, characters 24-41:
+Sub-goal Loop invariant preservation of goal go_ContinuePost'vc.
+Prover result is: Valid (0.00s, 2447 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 108, characters 24-37:
+Sub-goal Loop invariant preservation of goal go_ContinuePost'vc.
+Prover result is: Valid (0.01s, 6518 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 109, characters 24-61:
+Sub-goal Loop invariant preservation of goal go_ContinuePost'vc.
+Prover result is: Valid (0.01s, 27225 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 110, characters 24-110:
+Sub-goal Loop invariant preservation of goal go_ContinuePost'vc.
+Prover result is: Valid (0.01s, 27520 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 125, characters 71-82:
+Sub-goal Assertion of goal go_ContinuePost'vc.
+Prover result is: Valid (0.01s, 25048 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 130, characters 59-70:
+Sub-goal Assertion of goal go_ContinuePost'vc.
+Prover result is: Valid (0.01s, 27203 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 111, characters 22-39:
+Sub-goal Loop variant decrease of goal go_ContinuePost'vc.
+Prover result is: Valid (0.00s, 11010 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 106, characters 24-37:
+Sub-goal Loop invariant preservation of goal go_ContinuePost'vc.
+Prover result is: Valid (0.01s, 2462 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 107, characters 24-41:
+Sub-goal Loop invariant preservation of goal go_ContinuePost'vc.
+Prover result is: Valid (0.01s, 6584 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 108, characters 24-37:
+Sub-goal Loop invariant preservation of goal go_ContinuePost'vc.
+Prover result is: Valid (0.01s, 6606 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 109, characters 24-61:
+Sub-goal Loop invariant preservation of goal go_ContinuePost'vc.
+Prover result is: Valid (0.01s, 27401 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 110, characters 24-110:
+Sub-goal Loop invariant preservation of goal go_ContinuePost'vc.
+Prover result is: Valid (0.01s, 27750 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 94, characters 14-37:
+Sub-goal Postcondition of goal go_ContinuePost'vc.
+Prover result is: Valid (0.01s, 25045 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 95, characters 14-27:
+Sub-goal Postcondition of goal go_ContinuePost'vc.
+Prover result is: Valid (0.00s, 2432 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 153, characters 24-37:
+Sub-goal Loop invariant init of goal go_BreakLoop'vc.
+Prover result is: Valid (0.00s, 2328 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 154, characters 24-37:
+Sub-goal Loop invariant init of goal go_BreakLoop'vc.
+Prover result is: Valid (0.01s, 23991 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 155, characters 24-61:
+Sub-goal Loop invariant init of goal go_BreakLoop'vc.
+Prover result is: Valid (0.01s, 2346 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 143, characters 14-31:
+Sub-goal Postcondition of goal go_BreakLoop'vc.
+Prover result is: Valid (0.01s, 2353 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 144, characters 14-27:
+Sub-goal Postcondition of goal go_BreakLoop'vc.
+Prover result is: Valid (0.01s, 2358 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 170, characters 63-74:
+Sub-goal Assertion of goal go_BreakLoop'vc.
+Prover result is: Valid (0.01s, 24416 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 156, characters 22-39:
+Sub-goal Loop variant decrease of goal go_BreakLoop'vc.
+Prover result is: Valid (0.01s, 10533 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 153, characters 24-37:
+Sub-goal Loop invariant preservation of goal go_BreakLoop'vc.
+Prover result is: Valid (0.01s, 2373 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 154, characters 24-37:
+Sub-goal Loop invariant preservation of goal go_BreakLoop'vc.
+Prover result is: Valid (0.00s, 6211 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 155, characters 24-61:
+Sub-goal Loop invariant preservation of goal go_BreakLoop'vc.
+Prover result is: Valid (0.01s, 26518 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 195, characters 85-96:
+Sub-goal Assertion of goal go_Abs'vc.
+Prover result is: Valid (0.01s, 24112 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 186, characters 14-27:
+Sub-goal Postcondition of goal go_Abs'vc.
+Prover result is: Valid (0.01s, 24055 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 187, characters 14-95:
+Sub-goal Postcondition of goal go_Abs'vc.
+Prover result is: Valid (0.01s, 2382 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 188, characters 14-27:
+Sub-goal Postcondition of goal go_Abs'vc.
+Prover result is: Valid (0.00s, 2387 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 186, characters 14-27:
+Sub-goal Postcondition of goal go_Abs'vc.
+Prover result is: Valid (0.01s, 2357 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 187, characters 14-95:
+Sub-goal Postcondition of goal go_Abs'vc.
+Prover result is: Valid (0.01s, 3280 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 188, characters 14-27:
+Sub-goal Postcondition of goal go_Abs'vc.
+Prover result is: Valid (0.00s, 4154 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 186, characters 14-27:
+Sub-goal Postcondition of goal go_Abs'vc.
+Prover result is: Valid (0.01s, 2361 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 187, characters 14-95:
+Sub-goal Postcondition of goal go_Abs'vc.
+Prover result is: Valid (0.00s, 2386 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 188, characters 14-27:
+Sub-goal Postcondition of goal go_Abs'vc.
+Prover result is: Valid (0.00s, 2391 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 230, characters 55-66:
+Sub-goal Assertion of goal go_Shadow'vc.
+Prover result is: Valid (0.02s, 23781 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 218, characters 14-26:
+Sub-goal Postcondition of goal go_Shadow'vc.
+Prover result is: Valid (0.00s, 2318 steps).
+
+File "../whyml-demo/generated/semantics.mlw", line 219, characters 14-27:
+Sub-goal Postcondition of goal go_Shadow'vc.
+Prover result is: Valid (0.01s, 23873 steps).
+

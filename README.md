@@ -1,5 +1,17 @@
 # go-specification-lang
 
+## Go → WhyML verification prototype
+
+The `whyml` plugin and `go2whyml` CLI translate annotated Go into WhyML.
+The [insertion-sort demo](whyml-demo/README.md) proves ordered output and
+permutation preservation, including termination and runtime safety checks.
+See the [backend documentation](framework/plugin/whyml/README.md) for usage,
+supported control flow/contracts, and explicit Go/WhyML semantic restrictions.
+
+```sh
+./whyml-demo/verify.sh
+```
+
 **go-specification-lang** — фреймворк для анализа и трансформации программ на Go, вдохновлённый [Frama-C](https://frama-c.com/): так же, как Frama-C позволяет анализировать Си-программы с помощью аннотаций ACSL, этот проект привносит аналогичный подход в экосистему Go.
 
 Разработчик вносит спецификации прямо в исходный код в виде аннотаций на языке **GPMA** (Go Program Modelling Annotations) — диалекте ACSL, адаптированном для Go:

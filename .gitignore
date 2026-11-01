@@ -20,3 +20,9 @@ overlays/*
 .antlr
 
 debug.gobra
+
+# Reviewable outputs of the WhyML proof demonstration.
+!whyml-demo/generated/
+!whyml-demo/generated/*.mlw
+!whyml-demo/generated/*.proof.log
+!whyml-demo/generated/integration.log

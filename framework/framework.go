@@ -79,6 +79,9 @@ func (f *Framework) ProcessFile(filepath string) (*Result, error) {
 
 	// binding ast and specifications together
 	astData, err = bind.Bind(astData, spec)
+	if err != nil {
+		return nil, fmt.Errorf("failed to bind specifications: %w", err)
+	}
 
 	runner := plugin.NewPluginRunner(f.plugins)
 	runnerResult, err := runner.Run(astData)
