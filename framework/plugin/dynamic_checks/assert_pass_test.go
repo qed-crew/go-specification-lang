@@ -1,84 +1,147 @@
 package dynamicchecks_test
 
 import (
-	"bytes"
-	"fmt"
-	"go/format"
-	"go/parser"
-	"go/token"
 	"os"
+	"os/exec"
 	"path/filepath"
+	"strings"
 	"testing"
 )
 
-func TestDynamicChecksClauseAssertions(t *testing.T) {
-	tests := []struct {
-		name      string
-		statement string
-		clause    string
-	}{
-		{name: "switch case", statement: "switch 1", clause: "case 1"},
-		{name: "switch default", statement: "switch 1", clause: "default"},
-		{name: "type switch case", statement: "switch any(1).(type)", clause: "case int"},
-		{name: "select case", statement: "select", clause: "case make(chan int, 1) <- 1"},
-	}
+func TestDynamicChecksSwitchCaseAssertion(t *testing.T) {
+	// Reproduce issue #75 and run the switch with both a matching and a nonmatching value.
+	output, err := runInstrumentedProgram(t, `package main
 
-	for _, test := range tests {
-		t.Run(test.name, func(t *testing.T) {
-			// The expression switch case reproduces issue #75.
-			source := fmt.Sprintf(`package main
-func main() {
-/*@ assert \true; */
-_ = 0
-%s {
-%s:
-/*@ assert \false; */
-return
-}
-}
-`, test.statement, test.clause)
-			path := filepath.ToSlash(filepath.Join(t.TempDir(), "input.go"))
-			if err := os.WriteFile(path, []byte(source), 0o644); err != nil {
-				t.Fatal(err)
-			}
-			got, err := runDynamicChecksPlugin(path)
-			if err != nil {
-				t.Fatalf("instrument assertions: %v", err)
-			}
+import "fmt"
 
-			want := fmt.Sprintf(`package main
-
-import checks "gpma/framework/plugin/dynamic_checks/check"
-
-func main() {
-	checks.CheckAt(true, %[1]q, 3, "assertion")
+func check(n int) {
+	/*@ assert \true; */
 	_ = 0
-	%[2]s {
-	%[3]s:
-		checks.CheckAt(false, %[1]q, 7, "assertion")
+	switch n {
+	case 1:
+		/*@ assert \false; */
 		return
 	}
 }
-`, path, test.statement, test.clause)
-			if got, want := formatGoWithoutPositions(t, got), formatGoWithoutPositions(t, want); got != want {
-				t.Errorf("generated Go mismatch\n\n--- want ---\n%s\n--- got ---\n%s", want, got)
-			}
-		})
+
+func main() {
+	check(0)
+	fmt.Println("unselected clause returned")
+	check(1)
+}
+`)
+	if !strings.Contains(output, "unselected clause returned") {
+		t.Fatalf("switch failed when the case was skipped: %v\n%s", err, output)
+	}
+	if err == nil || !strings.Contains(output, "check failed") {
+		t.Fatalf("expected an assertion failure in the selected case, got %v\n%s", err, output)
 	}
 }
 
-func formatGoWithoutPositions(t *testing.T, source string) string {
+func TestDynamicChecksSwitchDefaultAssertion(t *testing.T) {
+	output, err := runInstrumentedProgram(t, `package main
+
+import "fmt"
+
+func check(n int) {
+	switch n {
+	case 1:
+		return
+	default:
+		/*@ assert \false; */
+		return
+	}
+}
+
+func main() {
+	check(1)
+	fmt.Println("unselected clause returned")
+	check(0)
+}
+`)
+	if !strings.Contains(output, "unselected clause returned") {
+		t.Fatalf("switch failed when the default was skipped: %v\n%s", err, output)
+	}
+	if err == nil || !strings.Contains(output, "check failed") {
+		t.Fatalf("expected an assertion failure in the default clause, got %v\n%s", err, output)
+	}
+}
+
+func TestDynamicChecksTypeSwitchCaseAssertion(t *testing.T) {
+	output, err := runInstrumentedProgram(t, `package main
+
+import "fmt"
+
+func check(value any) {
+	switch value.(type) {
+	case int:
+		/*@ assert \false; */
+		return
+	}
+}
+
+func main() {
+	check("text")
+	fmt.Println("unselected clause returned")
+	check(1)
+}
+`)
+	if !strings.Contains(output, "unselected clause returned") {
+		t.Fatalf("type switch failed when the case was skipped: %v\n%s", err, output)
+	}
+	if err == nil || !strings.Contains(output, "check failed") {
+		t.Fatalf("expected an assertion failure in the selected type case, got %v\n%s", err, output)
+	}
+}
+
+func TestDynamicChecksSelectCaseAssertion(t *testing.T) {
+	output, err := runInstrumentedProgram(t, `package main
+
+import "fmt"
+
+func check(ch chan int) {
+	select {
+	case ch <- 1:
+		/*@ assert \false; */
+		return
+	default:
+		return
+	}
+}
+
+func main() {
+	check(nil)
+	fmt.Println("unselected clause returned")
+	check(make(chan int, 1))
+}
+`)
+	if !strings.Contains(output, "unselected clause returned") {
+		t.Fatalf("select failed when the send case was skipped: %v\n%s", err, output)
+	}
+	if err == nil || !strings.Contains(output, "check failed") {
+		t.Fatalf("expected an assertion failure in the selected send case, got %v\n%s", err, output)
+	}
+}
+
+func runInstrumentedProgram(t *testing.T, source string) (string, error) {
 	t.Helper()
-	fset := token.NewFileSet()
-	file, err := parser.ParseFile(fset, "", source, 0)
-	if err != nil {
-		t.Fatalf("parse Go output: %v\n%s", err, source)
+	dir := t.TempDir()
+	input := filepath.ToSlash(filepath.Join(dir, "input.go"))
+	if err := os.WriteFile(input, []byte(source), 0o644); err != nil {
+		t.Fatal(err)
 	}
 
-	// Use an empty FileSet so source positions do not preserve blank lines.
-	var formatted bytes.Buffer
-	if err := format.Node(&formatted, token.NewFileSet(), file); err != nil {
-		t.Fatalf("format Go output: %v", err)
+	generated, err := runDynamicChecksPlugin(input)
+	if err != nil {
+		t.Fatal(err)
 	}
-	return formatted.String()
+	program := filepath.Join(dir, "instrumented.go")
+	if err := os.WriteFile(program, []byte(generated), 0o644); err != nil {
+		t.Fatal(err)
+	}
+
+	cmd := exec.CommandContext(t.Context(), "go", "run", program)
+	cmd.Env = append(cmd.Environ(), "CHECK_MODE=panic")
+	output, err := cmd.CombinedOutput()
+	return string(output), err
 }
