@@ -26,7 +26,6 @@ func applyAssertPass(astData *data.ASTData) bool {
 		return newList
 	}
 
-	
 	ast.Inspect(astData.File, func(n ast.Node) bool {
 		switch s := n.(type) {
 		case *ast.BlockStmt:
